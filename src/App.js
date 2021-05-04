@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+//https://sujeitoprogramador.com/r-api/?api=filmes/
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Routes from './routes';
+
+
+import 'react-toastify/dist/ReactToastify.css';
+//alert melhorado
+// npm install toastify
+import { ToastContainer } from 'react-toastify';
+
+import './style.css';
+
+export default function App(){
+
+    return(
+      <div className="app">
+        <Routes/>
+        <ToastContainer autoClose={3000}/>
+      </div>
+    );
 }
 
-export default App;
