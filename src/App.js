@@ -11,6 +11,8 @@ import { ToastContainer } from 'react-toastify';
 import './style.css';
 
 export default function App(){
+  fetch(process.env.REACT_APP_API_URL || 'https://localhost:8080/api/v1')
+
 
     return(
       <div className="app">
